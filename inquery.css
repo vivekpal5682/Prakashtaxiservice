@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    border: 2px solid rgb(0, 0, 0);
+    height: 80Vh;
+    margin-top: 30px;
+}
+.row{
+    /* border: 1px solid yellow; */
+    /* border-bottom: 1px solid black; */
+    height: 60px;
+}
+.col-md-4,.col-md-8{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: orange;
+    font-size: 35px;
+    text-align: center;
+    cursor: default;
+}
+h2{
+    color: rgb(0, 0, 0);
+    align-items: center;
+    cursor: default;
+    /* text-align: center; */
+}
+.row-1{
+    border: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* margin-top: 20px; */
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
+.row-1 p{
+    color: rgba(141, 62, 9, 0.514);
+    font-weight: 500;
+}
+.col-md-6{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+.location{
+    margin-top: 70px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+.submit{
+    margin-top: 50px;
+    background-color: rgb(7, 20, 197);
+    outline: none;
+    border: none;
+    height: 36px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    transition: 0.2s;
+}
+.submit:hover{
+    background-color: rgb(9, 71, 165);
+}
+input{
+    height: 40px;
+    padding-left: 10px;
+    
+}
+.gmail-1{
+    margin-top: 28px;
+}
+@media(max-width:576px){
+    .container{
+        height: 115vh;
+    }
+    h1{
+        font-size: 23px;
+    }
+    h2{
+        font-size: 13px;
+    }
+    form{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+    
+    .row-1 p{
+        font-size: 10px;
+    }
+}

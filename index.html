@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prakash Taxi Service</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="circle"></div>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Prakash Taxi service</a></div>
+            <ul class="links">
+                <li><a href="hero">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a class="action-btn" onclick="showlogin()">Login / Sign Up</a>
+            <div class="toggle-btn">
+                <i class="ri-menu-line menu" id="bbb"></i>
+            </div>
+        </div>
+
+        <div class="drop-down-menu" id="dropdwn">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="action-btn" onclick="showlogin()">Login / Sign Up</a></li>
+        </div>
+    </header>
+    <!-- contact pop pup -->
+    <div class="contact-pop" id="contactpop">
+        <div class="cut" onclick="hidecontact()">x</div>
+        <a href="tel:9971467542">Call</a>
+        <a href="https://wa.me/919971467542" target="_blank">Whats App</a>
+    </div>
+    <div class="contact-pop-opener" onclick="showcontact()">
+        📞
+    </div>
+    <!-- contact pop pup -->
+    <div class="page1">
+        <div class="text-box-2">
+            <h1>PRAKASH TAXI <br> SERVICE</h1>
+            <P>Reach Your Desination Now</P>
+        </div>
+        <a href="enquery.html" class="anchor">Get Start</a>
+        <div class="image-1">
+            <img src="im/innova.png" alt="">
+        </div>
+
+        <!-- login pop-pup  -->
+        <div class="loginform" id="login-form1">
+            <h1>Prakash Taxi Service</h1>
+            <div class="icon" onclick="hideform()">✖️ </div>
+            <div class="text-box">
+                <input type="text" placeholder="Username" required>
+                <input type="gmail" placeholder="Gmail Id" required>
+                <input type="password" placeholder="password" required>
+                <input type="button" class="btn1" value="Login" required onclick="hideform()">
+                <div class="box2">
+                    <p class="forgot"><a href="#">Forgot password</a></p>
+                    <p class="signup"><a href="#">Sign Up</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- login pop-pup end here -->
+    </div>
+
+    <!-- page 1 completed  -->
+    <!-- page 2 started -->
+    <div class="page-2" id="about">
+        <h1>About Prakash Taxi Service</h1>
+        <!-- rotating animation -->
+        <div class="box-1"> </div>
+        <div class="box-2"> </div>
+        <div class="box-3"> </div>
+        <!-- rotating animation -->
+        <div class="text-box1">
+            <div class="right-box">
+                <img src="im/innova.png" alt="">
+            </div>
+            <div class="left-box">
+                <p>
+                    Welcome to Prakash Taxi Service, your go-to solution for convenient and affordable transportation.
+                    We take pride in offering a fleet of well-maintained and comfortable cars at prices that won't break
+                    the bank. With a commitment to providing top-notch service, Prakash Taxi Service ensures that your
+                    journey is not only cost-effective but also enjoyable. At Prakash Taxi Service, our professional
+                    drivers are dedicated to making your ride safe, smooth, and hassle-free.
+                </p>
+                <div class="enquery-box">
+                    <button class="bnt4" onclick="openenqueryform()">Enquery</button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!-- page 2 completed -->
+
+    <!-- page 3 started -->
+    <div class="page-3">
+        <h1>Why Prakash Taxi Service ?</h1>
+        <p>You can book any of these base on your requirment</p>
+        <div class="box-5">
+            <div class="mini-1">
+                <div class="car">
+                    <img src="im/ertiga-1.jpg" alt="" class="ertiga-2">
+                </div>
+                <div class="text">
+                    <h3>No return fare</h3>
+                    <p>Why pay double for one way cab! Taxi providers are ready for one way fare as they are getting
+                        another customer for return</p>
+                </div>
+            </div>
+            <div class="mini-1">
+                <div class="car">
+                    <img src="im/dizire-1.jpg" alt="" class="dzire-2">
+                </div>
+                <div class="text">
+                    <h3>No over-pricing</h3>
+                    <p>Get chepest price for your journey. A big pool of outstation taxi providers are waiting to serve
+                        you best in least price</p>
+                </div>
+            </div>
+            <div class="mini-1">
+                <div class="car">
+                    <img src="im/inova-2.jpg" alt="" class="inova-2">
+                </div>
+                <div class="text">
+                    <h3>cabs availability</h3>
+                    <p>No more off-season, no more idle cabs.Prakash Taxi Service brings thousands of taxi providers in
+                        your reach.</p>
+                </div>
+            </div>
+            <div class="mini-1">
+                <div class="car">
+                    <img src="im/verna-1.jpg" alt="" class="verna-2">
+                </div>
+                <div class="text">
+                    <h3>Own Taxi?</h3>
+                    <p>Get all your cabs earning for you throught the year by providing top class service and least
+                        price to customers at Prakash Taxi Service.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- page 3 completed -->
+
+
+    <!-- page 4 completed -->
+    <div class="page-4">
+        <h1>Top visited cities</h1>
+        <div class="outer-city">
+            <div class="row-1">
+                <div class="city-1">
+                    <div class="image">
+                        <img src="im/khatu.jpg" alt="">
+                    </div>
+                    <h3>Ghaziabad To Khatu shyam cab</h3>
+                </div>
+                <div class="city-1">
+                    <div class="image">
+                        <img src="im/ayodhya.jpg" alt="">
+                    </div>
+                    <h3>Ghaziabad To Ayodhya cab</h3>
+                </div>
+                <div class="city-1">
+                    <div class="image">
+                        <img src="im/delhi.jpg" alt="">
+                    </div>
+                    <h3>Ghaziabad To Delhi cab</h3>
+                </div>
+                <div class="city-1">
+                    <div class="image">
+                        <img src="im/hardwar.jpg" alt="">
+                    </div>
+                    <h3>Ghaziabad To haridwar cab</h3>
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="city-1">
+                    <div class="image">
+                        <img src="im/hapur.jpg" alt="">
+                    </div>
+                    <h3>Ghaziabad To Hapur cab</h3>
+                </div>
+                <div class="city-1">
+                    <div class="image">
+                        <img src="im/nanital.jpg" alt="">
+                    </div>
+                    <h3>Ghaziabad To Nanital cab</h3>
+                </div>
+                <div class="city-1">
+                    <div class="image">
+                        <img src="im/massori.jpg" alt="">
+                    </div>
+                    <h3>Ghaziabad To massori cab</h3>
+                </div>
+                <div class="city-1">
+                    <div class="image">
+                        <img src="im/manali.jpg" alt="">
+                    </div>
+                    <h3>Ghaziabad To Manali cab</h3>
+                </div>
+            </div>
+            <div class="row-3">
+                <div class="city-1">
+                    <div class="image">
+                        <img src="im/dehradun.jpg" alt="">
+                    </div>
+                    <h3>Ghaziabad To Dheradun cab</h3>
+                </div>
+                <div class="city-1">
+                    <div class="image">
+                        <img src="im/rishikesh.jpg" alt="">
+                    </div>
+                    <h3>Ghaziabad To Rishikesh cab</h3>
+                </div>
+                <div class="city-1">
+                    <div class="image">
+                        <img src="im/shimla.jpg" alt="">
+                    </div>
+                    <h3>Ghaziabad To Shimla cab</h3>
+                </div>
+                <div class="city-1">
+                    <div class="image">
+                        <img src="im/merrut.jpg" alt="">
+                    </div>
+                    <h3>Ghaziabad To Meerut cab</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- page 4 completed -->
+    <!-- page-5 started -->
+    <div class="page-5">
+        <h1>Contact Us</h1>
+        <div class="box-7">
+            <div class="left-2">
+                <div class="address">
+
+                    <div class="logo-2"><i class="ri-map-pin-line"></i></div>
+                    <div class="text-1">C-2nd 8, Gali No.-6, Brijnagri Nandgram, Ghaziabad-201017 (U.P)</div>
+                </div>
+                <div class="phone">
+
+                    <div class="logo-2"><i class="ri-phone-line"></i></div>
+                    <div class="text-1 spcl">+91 9971467542</div>
+                </div>
+                <div class="email">
+
+                    <div class="logo-2"><i class="ri-mail-line"></i></div>
+                    <div class="text-1 spcl">omprakashpal2255@gmail.com</div>
+                </div>
+            </div>
+            <div class="right-2">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7000.048245385525!2d77.40188599999999!3d28.688924999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf1dd8f47a8dd%3A0xa70b205e8d847b23!2sIndrapuram%20Taxi%20Service!5e0!3m2!1sen!2sin!4v1693645092290!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- page-5 completed -->
+    <!-- page-6 started -->
+    <div class="page-6">
+        <div class="footer">
+            <div class="foot-head">
+                <div class="fotter-left">
+                    <h3>Call Us Today For More Information</h3>
+                </div>
+                <div class="fotter-right">
+                    <h3>📞9971467542</h3>
+                </div>
+            </div>
+            <div class="footer-mid">
+                <div class="lt">
+                    <h4>Contact Us</h4>
+                    <p>C-2nd, Brijnagri deendyalpuri <br> Nandgram, Ghaziabad (201001)</p>
+                </div>
+                <div class="mt">
+                    <h4>PRAKASH TAXI SERVICE</h4>
+                    <p>local & Out station Cabs <br> Nandgram, Ghaziabad (201001)</p>
+                </div>
+                <div class="rt">
+                    <h4>Quick Links</h4>
+                    <ul class="list">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">contact</a></li>
+                        <li><a href="">galarey</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="copy">
+                <div class="r1"><p>Made By Vivek Pal❤️</p></div>
+                <div class="l1"><p>@all right reserved</p></div>
+                <div class="m1"><p> <i class="ri-instagram-line"></i> <a target="_blank" href="https://www.instagram.com/coding.with.vivek/">coding.with.vivek</a></p></div>
+                
+               
+            </div>
+        </div>
+    </div>
+    <!-- page-6 completed -->
+
+    <!-- java-script work start -->
+    <script>
+        const togglebtn = document.querySelector('.toggle-btn')
+        const togglebtnicon = document.querySelector('.toggle-btn i')
+        const dropdownmenu = document.querySelector('.drop-down-menu')
+
+        togglebtn.onclick = function () {
+            dropdownmenu.classList.toggle('open')
+        }
+        function mousefolow() {
+            window.addEventListener("mousemove", function (dets) {
+                document.querySelector("#circle").style.transform = `translate(${dets.clientX}px , ${dets.clientY}px)`
+            })
+        }
+        mousefolow()
+        function showlogin() {
+            document.getElementById("login-form1").style.display = "block"
+            //document.getElementById("dropdwn").style.display="none"
+        }
+        function hideform() {
+            document.getElementById("login-form1").style.display = "none"
+            //alert("login succesfully")//
+        }
+
+        function showcontact() {
+            document.getElementById("contactpop").style.display = "flex"
+        }
+        function hidecontact() {
+            document.getElementById("contactpop").style.display = "none"
+        }
+
+        function openenqueryform() {
+            window.location.href = "enquery.html"
+        }
+
+    </script>
+</body>
+
+</html>

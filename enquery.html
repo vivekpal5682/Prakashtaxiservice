@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="inquery.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h1>Prakash Taxi Service</h1>
+            </div>
+            <div class="col-md-8">
+                <h2>Call On: 9971467542</h2>
+            </div>
+        </div>
+        <div class="row row-1">
+            <p>Starting froms Rs. 11/KM/- Outstation Trips</p>
+        </div>
+        <form action="">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="">First name</label>
+                    <input type="text" required id="name">
+                </div>
+                <div class="col-md-6">
+                    <label for="">Last name</label>
+                    <input type="text" required id="last">
+                </div>
+            </div>
+            <div class="row gmail-1">
+                <div class="col-md-6">
+                    <label for="">Gmail-Id</label>
+                    <input type="text" required id="gmail">
+                </div>
+                <div class="col-md-6">
+                    <label for="">Phone number</label>
+                    <input type="number" required id="number">
+                </div>
+            </div>
+            <div class="row location">
+                <div class="col-md-6">
+                    <label for="">Pick-up location</label>
+                    <input type="text" required id="pick-up">
+                </div>
+                <div class="col-md-6">
+                    <label for="">Drop location</label>
+                    <input type="text" required id="drop">
+                </div>
+            </div>
+            <input type="submit" class="submit"  onclick="whatsapp()">
+            
+        </form>
+    </div>
+    <script>
+        function whatsapp(){
+            var name = document.getElementById("#name").value;
+            var last = document.getElementById("#last").value;
+            var gmail = document.getElementById("#gmail").value;
+            var number = document.getElementById("#number").value;
+            var pickloctaion = document.getElementById("#pick-up").value;
+            var droplocation = document.getElementById("#drop").value;
+
+            var whatapurl = "https://wa.me/919971467542?text="
+            +"Name:"+name+"%0a"
+            +"Last name:"+last+"%0a"
+            +"Gmail:"+gmail+"%0a"
+            +"Phone number:"+number+"%0a"
+            +"Pick-up location:"+pickloctaion+"%0a"
+            +"Drop location:"+droplocation;
+
+            window.open(whatapurl).focus();
+        }
+    </script>
+</body>
+</html>
